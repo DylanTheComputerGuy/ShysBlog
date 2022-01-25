@@ -2,3 +2,27 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* Nav Bar  Start*/
+.navBar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.navContainer {
+    background-color:grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+}
+.navContainer:hover {
+    color: white;
+    border: 1px solid white;
+}
+/* Nav Bar  End*/
