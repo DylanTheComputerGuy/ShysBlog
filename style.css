@@ -5,7 +5,8 @@
 
 
 /* Nav Bar  Start*/
-.navBar {
+
+.navGridBlock {
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -26,3 +27,8 @@ align-items: center;
     border: 1px solid white;
 }
 /* Nav Bar  End*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
