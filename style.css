@@ -5,15 +5,25 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 1fr 1fr;
-    
-    grid-template-areas: "navGridBlock navGridBlock navGridBlock"
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10px 50px 1fr 1fr;
+    gap: 2px;
+    grid-template-areas: "title title title"
+                         "navGridBlock navGridBlock navGridBlock"
                          "leftGrid mainGrid rightGrid"
                          "leftGrid mainGrid rightGrid";
 }
 /* Nav Bar  Start*/
+body {
+    background-color:rgb(128, 193, 204);
+}
 
+.title {
+    display: flex;
+    grid-area: title;
+    justify-content: right;
+    margin-right: 10px;
+}
 .navGridBlock {
   display: flex;
   justify-content: space-between;
@@ -40,15 +50,18 @@
 .mainGrid {
     display: grid;
     grid-area: mainGrid;
-    background-color: blue;
+    background-color: rgb(128, 193, 204);
     justify-items: center;
+    border:4px solid black;
+    height: 100vh;
 }
 .leftGrid {
-  background-color: orange;
+  
   grid-area: leftGrid;
+  height: 100vh;
 }
 .rightGrid {
-    background-color: green;
+    
     grid-area: rightGrid;
-    height: 1000px;
+    height: 100vh;
 }
