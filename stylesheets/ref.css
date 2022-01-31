@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    background-color: black;
+    margin: 10px;
+}
+
+.blog {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+}
+#blogcolor1 {
+    background-color: RGB(214,228,245) ;
+}
+#blogcolor2 {
+    background-color: RGB(53,63,79) ;
+}
+#blogcolor3 {
+    background-color: RGB(123,141,167) ;
+}
+#blogcolor4 {
+    background-color: RGB(161,182,210) ;
+}
+#blogcolor5 {
+    background-color: RGB(148,155,180) ;
+}
+
+.blog > div {
+    margin: 6px;
+  }
