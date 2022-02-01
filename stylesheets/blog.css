@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
 }
 :root {
     --background-tile-container: rgb(152, 155, 107); 
@@ -20,6 +21,7 @@ html {
     /*centers children items*/
     justify-content: center;
     align-items: center;
+    
 }
 .shadowbox {
     background-image: url('../resources/recipies/yummyChicken.jpg');
@@ -33,6 +35,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
 }
 .shadowbox h1{
    display: flex;
@@ -40,16 +45,24 @@ html {
    background-color: rgba(0, 0, 0, 0.6);
    padding: 15px;
    border-radius: 5px; 
+   flex-direction: column;
+   
 
 }
 
-
+/*     This is the end of the CSS for the Recipes Block*/
 .recipeTiles {
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;
     background-color: rgb(53,63,79);
+   /* 
+    implement with a scroll bar mabye
+    overflow: hidden;
+    max-height: 800px;
+    */
+    
 }
 
 .recipeTiles div{
@@ -58,20 +71,78 @@ html {
     grid-template-rows: 1fr 1fr 1fr;
     margin: 10px;
     border: solid black 2px;
-    height: 150px;
-    width: 150px;
+    height: 350px;
+    width: 350px;
+    -webkit-box-shadow: 0 10px 6px -6px rgb(214,228,245);
+     -moz-box-shadow: 0 10px 6px -6px rgb(214,228,245);
+          box-shadow: 0 10px 6px -6px rgb(214,228,245);
 }
 
-.new {
-    background-color: rgb(123,141,167);
-    display: inline-flex;
-    flex-wrap: wrap;
+.recipeTiles .title {
+    display: flex;
     align-items: center;
     justify-content: center;
-}
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0,.5);
+    font-size: 40px;
+    -webkit-box-shadow: 0 10px 6px -6px rgb(214,228,245);
+     -moz-box-shadow: 0 10px 6px -6px rgb(214,228,245);
+          box-shadow: 0 10px 6px -6px rgb(214,228,245);
 
-.tile1 {
+}
+.recipeTiles .tile1 {
     background-image: url('../resources/recipies/macaroons.jpg');
     background-size: cover;
     background-position: center;
+}
+.recipeTiles .tile2 {
+    background-image: url('../resources/recipies/sushi.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.recipeTiles .tile3 {
+    background-image: url('../resources/recipies/crep.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.recipeTiles .tile4 {
+    background-image: url('../resources/recipies/yummyChicken.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.recipeTiles h2 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.8);
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    margin: 6px;
+    padding: 10px;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 80%;
+    
+}
+/*     This is the end of the CSS for the Recipes Block*/
+
+
+
+
+.storyBlock {
+    background-color: rgb(123,141,167);
+    text-align: center;
+    padding-top: 40px;
+    padding: 30px;
+}
+
+.storyBlock p{
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 24px;
+}
+.storyBlock img {
+    margin: 20px;
 }
